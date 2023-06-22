@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./Pages/Home"
 
+import NavigationBar from "./Components/NavigationBar";
 import "./styles/main.css"
 import "./styles/mobile/responsive.css"
 import Commitment from "./Pages/Commitment";
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />}/>
           <Route path="/main/commitment" element={<Commitment />}/>
         </Routes>
+        <NavigationBar />
         <div className="button-music-wrapper">
           <button className="button-music">
           <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" className="icon-pause" width={"24px"} height={"24px"}>
