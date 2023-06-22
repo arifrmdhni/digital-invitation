@@ -1,0 +1,146 @@
+@font-face {
+  font-family: Futura;
+  src: url('../assets/font/futura\ medium\ bt.4e762c29ef7b44ca51cb.ttf');
+}
+@font-face {
+  font-family: FuturaBold;
+  src: url('../assets/font/Futura\ Heavy\ font.af72c25a6945b0f48abb.ttf');
+}
+@font-face {
+  font-family: TitiliumBold;
+  src: url('../assets/font/TitilliumWeb-Bold.7a3e2008fb7139ce30b9.ttf');
+}
+@font-face {
+  font-family: Titilium;
+  src: url('../assets/font/TitilliumWeb-Regular.6531669d2058b13ca785.ttf');
+}
+@font-face {
+  font-family: MuesoItalic;
+  src: url('../assets/font/Museo_Slab_500italic.6ad8e2407daeac2afac1.otf');
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-image: url('../assets/images/btn-background.jpg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  padding: 16px;
+}
+
+body>div {
+  height: 100%;
+}
+
+.card-container {
+  height: 100%;
+}
+.card {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffffb2;
+  border-radius: 16px;
+  height: 100%; 
+}
+.custom-card {
+  height: calc(100% - 72px);
+  overflow: auto hidden;
+}
+
+/* Navbar Area */
+.navbar {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  height: 72px !important;
+  width: 100vw !important;
+  background: rgba(0, 25, 50, 0.8);
+  overflow: auto hidden;
+  padding: 0 !important;
+  margin: 0;
+}
+.navbar .navbar-wrapper {
+  display: flex;
+  flex-flow: nowrap;
+  gap: 8px;
+  width: calc(678px);
+  margin: 0 auto;
+}
+.navbar .navbar-wrapper button {
+  min-width: 90px;
+}
+.navbar .navbar-wrapper .navigation-button {
+  /* display: inline-flex;
+  align-items: center;
+  justify-content: center; */
+  position: relative;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  padding: 8px 11px;
+}
+.navbar .navbar-wrapper .navigation-button .svg-wrapper {
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar .navbar-wrapper .navigation-button .svg-wrapper .button-text {
+  text-transform: none;
+  color: rgb(255, 255, 255);
+  font-size: 8pt;
+  line-height: 9pt;
+  height: 20pt;
+}
+.navbar .navbar-wrapper .navigation-button .svg-wrapper span {
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  border-radius: inherit;
+}
+
+/* Button Music */
+.button-music-wrapper {
+  position: absolute;
+  bottom: 102px;
+  right: 8px;
+}
+.button-music {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
+  background-color: rgb(240, 183, 38);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  min-height: 36px;
+  z-index: 999;
+}
