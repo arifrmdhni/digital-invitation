@@ -15,7 +15,6 @@ function App() {
           <Route path="/" element={<Home />}/>
           <Route path="/main/commitment" element={<Commitment />}/>
         </Routes>
-        <NavigationBar />
         <div className="button-music-wrapper">
           <button className="button-music">
           <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" className="icon-pause" width={"24px"} height={"24px"}>
@@ -23,6 +22,7 @@ function App() {
           </svg>
           </button>
         </div>
+        <NavigationBar />  
       </Router>
     </div>
   );
