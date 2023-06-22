@@ -41,6 +41,7 @@ body>div {
   height: 100%;
 }
 .card {
+  position: relative;
   max-width: 800px;
   margin: 0 auto;
   background-color: #ffffffb2;
